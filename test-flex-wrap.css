@@ -10,8 +10,8 @@
     display: -moz-flex;
     display: -webkit-flex;
     display: flex;
-  }
-  
+  }  
+
   .nowrap  { 
     -webkit-flex-wrap: nowrap;
     flex-wrap: nowrap;
@@ -46,3 +46,4 @@
     font-size: 2em;
     text-align: center;
   }
+  

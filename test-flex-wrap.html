@@ -1,51 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name = "description" content = "testear propiedad WRAP de Flexbox">
-    <meta name = "author"      content = "Alumno IT Academy BcnActiva">
-    <meta name = "keywords"    content = "repaso estilos con Flex Layout, aprendizaje web">         
-    <title>Test Flexbox - wrap</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name = "description" content = "testear propiedad WRAP de Flexbox">
+        <meta name = "author"      content = "Alumno IT Academy BcnActiva">
+        <meta name = "keywords"    content = "repaso estilos con Flex Layout, aprendizaje web">         
+        <title>Test Flexbox - wrap</title>
 
-    <!-- css para testear propiedad WRAP de Flexbox -->
-    <link rel="stylesheet" href="test-flex-wrap.css">          
+        <!-- css para testear propiedad WRAP de Flexbox -->
+        <link rel="stylesheet" href="test-flex-wrap.css">          
 
-</head>
-<body>
-    
-</body>
+    </head>
+    <body>
+        <h1>TEST FLEXBOX (wrap)</h1>                
+
+        <!-- 1. definim un primer contenidor amb 8 elements vermells, i amb NO-WRAP:            
+        el seu comportament serà fer-se estrets proporcionalment a la pantalla -->
+
+        <h2>1. no-wrap</h2>
+
+        <ul class="flex-container nowrap">
+            <li class="flex-item">1</li>
+            <li class="flex-item">2</li>
+            <li class="flex-item">3</li>
+            <li class="flex-item">4</li>
+            <li class="flex-item">5</li>
+            <li class="flex-item">6</li>
+            <li class="flex-item">7</li>
+            <li class="flex-item">8</li>
+        </ul>
+        
+        <!-- 2. definim un segon contenidor amb 8 elements grocs, i amb WRAP:
+        el seu comportament serà mantenir l'amplada de cadascun, i l'últim saltar-lo de línia -->
+
+        <h2>2. wrap</h2>
+
+        <ul class="flex-container wrap">
+            <li class="flex-item">1</li>
+            <li class="flex-item">2</li>
+            <li class="flex-item">3</li>
+            <li class="flex-item">4</li>
+            <li class="flex-item">5</li>
+            <li class="flex-item">6</li>
+            <li class="flex-item">7</li>
+            <li class="flex-item">8</li>
+        </ul>
+        
+        <!-- 3. definim un tercer contenidor amb 8 elements blaus, i amb WRAP-REVERSE:
+        el seu comportament serà mantenir l'amplada de cadascun, i l'últim saltar-lo de línia 
+        però en aquest cas, invertint l'ordre de l'últim al primer      -->
+
+        <h2>3. wrap-reverse</h2>
+
+        <ul class="flex-container wrap-reverse">
+            <li class="flex-item">1</li>
+            <li class="flex-item">2</li>
+            <li class="flex-item">3</li>
+            <li class="flex-item">4</li>
+            <li class="flex-item">5</li>
+            <li class="flex-item">6</li>
+            <li class="flex-item">7</li>
+            <li class="flex-item">8</li>
+        </ul>
+    </body>
 </html>
-
-<ul class="flex-container nowrap">
-    <li class="flex-item">1</li>
-    <li class="flex-item">2</li>
-    <li class="flex-item">3</li>
-    <li class="flex-item">4</li>
-    <li class="flex-item">5</li>
-    <li class="flex-item">6</li>
-    <li class="flex-item">7</li>
-    <li class="flex-item">8</li>
-  </ul>
-  
-  <ul class="flex-container wrap">
-    <li class="flex-item">1</li>
-    <li class="flex-item">2</li>
-    <li class="flex-item">3</li>
-    <li class="flex-item">4</li>
-    <li class="flex-item">5</li>
-    <li class="flex-item">6</li>
-    <li class="flex-item">7</li>
-    <li class="flex-item">8</li>
-  </ul>
-  
-  <ul class="flex-container wrap-reverse">
-    <li class="flex-item">1</li>
-    <li class="flex-item">2</li>
-    <li class="flex-item">3</li>
-    <li class="flex-item">4</li>
-    <li class="flex-item">5</li>
-    <li class="flex-item">6</li>
-    <li class="flex-item">7</li>
-    <li class="flex-item">8</li>
-  </ul>
